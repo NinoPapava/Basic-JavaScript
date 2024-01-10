@@ -1,6 +1,6 @@
 // Find all the prime numbers in the number array and write them into the primeNumber array
 
-let numbers = [10, 13, 25, 23, 31, 35, 37, 45, 49, 51];
+let numbers = [10, 13, 25, 23, 31, 35, 37, 45, 47, 50];
 
 
 
@@ -20,7 +20,7 @@ for (let i = 0; i < numbers.length; i++) {
 
   // (for) Let's find out if a particular number is prime
   let isPrime = true;
-  for (let j = 2; j < number; j++) {
+  for (let j = 2; j <= number / 2; j++) {
     if (number % j == 0) {
       isPrime = false;
     }
