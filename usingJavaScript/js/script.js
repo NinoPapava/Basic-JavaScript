@@ -14,6 +14,14 @@ function showDemo (){
   document.getElementById('demo').style.display='block';
 }
 
+function changeHtml (){
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+}
+
+function backToText(){
+  document.getElementById("demo").innerHTML = "JavaScript can change the style of an HTML element.";
+}
+
 function date (){
   document.getElementById('demo2').innerHTML = Date();
 }
