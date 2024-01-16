@@ -4,4 +4,9 @@ h1, p {
 
 div {
   padding-left: 48%;
+  padding-bottom: 2%;
+}
+
+.print {
+  padding-left: 46%;
 }
