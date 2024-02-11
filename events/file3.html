@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" id="username" />
+
+    <script>
+      function onUserNameChange(e) {
+        if (e.target.value == "nino") {
+          console.log(
+            "There is already a user with that name, please enter another name"
+          );
+        }
+      }
+
+      const username = document.getElementById("username");
+      username.addEventListener("input", onUserNameChange);
+    </script>
+  </body>
+</html>
