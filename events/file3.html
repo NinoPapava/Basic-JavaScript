@@ -7,17 +7,20 @@
   </head>
   <body>
     <input type="text" id="username" />
+    <div class="error"></div>
 
     <script>
+      const username = document.getElementById("username");
+      const error = document.querySelector(".error");
+
       function onUserNameChange(e) {
         if (e.target.value == "nino") {
-          console.log(
-            "There is already a user with that name, please enter another name"
-          );
+          error.style.color = "red";
+          error.innerHTML =
+            "There is already a user with that name, please enter another name";
         }
       }
 
-      const username = document.getElementById("username");
       username.addEventListener("input", onUserNameChange);
     </script>
   </body>
